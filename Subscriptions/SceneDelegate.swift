@@ -51,3 +51,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+
+extension SceneDelegate {
+    func setupLogging() {
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        let logDateFormatter = LogDateFormatter(dateFormat: "yyyy-MM-dd HH:mm:ssSSS")
+        LogService.register(provider: ConsoleLogProvider(dateFormatter: logDateFormatter))
+        LogService.register(provider: FileLogProvider(dateFormatter: logDateFormatter, fileWriter: LogFileWriter(filePath: documentsPath + "/TodoAppLog.txt")))
+    }
+}
