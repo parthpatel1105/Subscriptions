@@ -13,21 +13,21 @@ enum InterfaceStyle {
     case dark
 }
 
-extension UIColor {
-    
-    static let destructiveColor = UIColor(red: 214/255, green: 40/255, blue: 40/255, alpha: 1.0)
-    static let warningColor = UIColor(red: 255/255, green: 190/255, blue: 11/255, alpha: 1.0)
-    
-    static var backgroundColor: UIColor {
-        return UIColor { (Collection) -> UIColor in
-            if Collection.userInterfaceStyle == .dark {
-                return UIColor.green.withAlphaComponent(0.6)
-            } else {
-                return UIColor.green.withAlphaComponent(0.9)
-            }
-        }
-    }
-}
+//extension UIColor {
+//    
+//    static let destructiveColor = UIColor(red: 214/255, green: 40/255, blue: 40/255, alpha: 1.0)
+//    static let warningColor = UIColor(red: 255/255, green: 190/255, blue: 11/255, alpha: 1.0)
+//    
+//    static var backgroundColor: UIColor {
+//        return UIColor { (Collection) -> UIColor in
+//            if Collection.userInterfaceStyle == .dark {
+//                return UIColor.green.withAlphaComponent(0.6)
+//            } else {
+//                return UIColor.green.withAlphaComponent(0.9)
+//            }
+//        }
+//    }
+//}
 
 
 @propertyWrapper
