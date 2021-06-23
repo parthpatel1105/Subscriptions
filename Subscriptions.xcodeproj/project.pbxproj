@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15027F024FCE32310E03C5F7 /* Pods_SubscriptionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F22711DF960C4980E858D5B /* Pods_SubscriptionsTests.framework */; };
+		3B14312B3A235D2EF2FA0BCA /* Pods_Subscriptions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5176994F1045EF1403DE20E3 /* Pods_Subscriptions.framework */; };
+		5545B0533B2CF51B93BC2A0F /* Pods_SubscriptionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50EB94563B07F47EFDD2B31 /* Pods_SubscriptionsTests.framework */; };
+		B21F0EBA268288B70015FC1B /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = B21F0EB9268288B70015FC1B /* config.plist */; };
 		B23B14482508482B008B30A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B14472508482B008B30A5 /* AppDelegate.swift */; };
 		B23B144A2508482B008B30A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B14492508482B008B30A5 /* SceneDelegate.swift */; };
 		B23B144C2508482B008B30A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B144B2508482B008B30A5 /* ViewController.swift */; };
@@ -18,6 +20,7 @@
 		B23B146B250BC522008B30A5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B146A250BC522008B30A5 /* UIColor+Extension.swift */; };
 		B23B146D250BEA4E008B30A5 /* Margins+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B146C250BEA4E008B30A5 /* Margins+Extension.swift */; };
 		B23B146F250BEA72008B30A5 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B146E250BEA72008B30A5 /* UIFont+Extension.swift */; };
+		B25E46AF267E5A6F008BD170 /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E46AE267E5A6F008BD170 /* EnvironmentConfiguration.swift */; };
 		B2B769FF250C514E00FA4331 /* LogDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B769F5250C514E00FA4331 /* LogDateFormatter.swift */; };
 		B2B76A00250C514E00FA4331 /* FileLogProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B769F7250C514E00FA4331 /* FileLogProvider.swift */; };
 		B2B76A01250C514E00FA4331 /* ConsoleLogProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B769F8250C514E00FA4331 /* ConsoleLogProvider.swift */; };
@@ -26,7 +29,6 @@
 		B2B76A04250C514E00FA4331 /* LogFileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B769FC250C514E00FA4331 /* LogFileWriter.swift */; };
 		B2B76A05250C514E00FA4331 /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B769FD250C514E00FA4331 /* LogEvent.swift */; };
 		B2B76A06250C514E00FA4331 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B769FE250C514E00FA4331 /* LogService.swift */; };
-		C21BF1CFCDD309546AC823B5 /* Pods_Subscriptions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846169725025C84B85C07FCA /* Pods_Subscriptions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B9172D40196A76DC3E76A76 /* Pods-Subscriptions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subscriptions.release.xcconfig"; path = "Target Support Files/Pods-Subscriptions/Pods-Subscriptions.release.xcconfig"; sourceTree = "<group>"; };
-		2793BE24F960CCE79195B629 /* Pods-Subscriptions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subscriptions.debug.xcconfig"; path = "Target Support Files/Pods-Subscriptions/Pods-Subscriptions.debug.xcconfig"; sourceTree = "<group>"; };
-		2A55F1365DFB3546CE68E346 /* Pods-SubscriptionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionsTests.release.xcconfig"; path = "Target Support Files/Pods-SubscriptionsTests/Pods-SubscriptionsTests.release.xcconfig"; sourceTree = "<group>"; };
-		846169725025C84B85C07FCA /* Pods_Subscriptions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Subscriptions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F22711DF960C4980E858D5B /* Pods_SubscriptionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubscriptionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		449F19F1BD91090480D26A75 /* Pods-SubscriptionsTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionsTests.production.xcconfig"; path = "Target Support Files/Pods-SubscriptionsTests/Pods-SubscriptionsTests.production.xcconfig"; sourceTree = "<group>"; };
+		5176994F1045EF1403DE20E3 /* Pods_Subscriptions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Subscriptions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		830660C4875018D73B71A09B /* Pods-Subscriptions.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subscriptions.production.xcconfig"; path = "Target Support Files/Pods-Subscriptions/Pods-Subscriptions.production.xcconfig"; sourceTree = "<group>"; };
+		843DB31BA7E68D1926622D4C /* Pods-Subscriptions.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subscriptions.qa.xcconfig"; path = "Target Support Files/Pods-Subscriptions/Pods-Subscriptions.qa.xcconfig"; sourceTree = "<group>"; };
+		B07743BC9C5C7E240523DB8A /* Pods-Subscriptions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Subscriptions.debug.xcconfig"; path = "Target Support Files/Pods-Subscriptions/Pods-Subscriptions.debug.xcconfig"; sourceTree = "<group>"; };
+		B21F0EB9268288B70015FC1B /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		B21F0EFF268385F90015FC1B /* Subscriptions-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Subscriptions-Production.xcconfig"; sourceTree = "<group>"; };
+		B21F0F00268386110015FC1B /* Subscriptions-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Subscriptions-Debug.xcconfig"; sourceTree = "<group>"; };
+		B21F0F012683861D0015FC1B /* Subscriptions-QA.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Subscriptions-QA.xcconfig"; sourceTree = "<group>"; };
 		B23B14442508482B008B30A5 /* Subscriptions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subscriptions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23B14472508482B008B30A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B23B14492508482B008B30A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,7 @@
 		B23B146A250BC522008B30A5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B23B146C250BEA4E008B30A5 /* Margins+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Margins+Extension.swift"; sourceTree = "<group>"; };
 		B23B146E250BEA72008B30A5 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		B25E46AE267E5A6F008BD170 /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
 		B2B769F5250C514E00FA4331 /* LogDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDateFormatter.swift; sourceTree = "<group>"; };
 		B2B769F7250C514E00FA4331 /* FileLogProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLogProvider.swift; sourceTree = "<group>"; };
 		B2B769F8250C514E00FA4331 /* ConsoleLogProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogProvider.swift; sourceTree = "<group>"; };
@@ -67,7 +74,9 @@
 		B2B769FC250C514E00FA4331 /* LogFileWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFileWriter.swift; sourceTree = "<group>"; };
 		B2B769FD250C514E00FA4331 /* LogEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEvent.swift; sourceTree = "<group>"; };
 		B2B769FE250C514E00FA4331 /* LogService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
-		DF14E1491492BABDEBE4E4F7 /* Pods-SubscriptionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionsTests.debug.xcconfig"; path = "Target Support Files/Pods-SubscriptionsTests/Pods-SubscriptionsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA3189B0AC100F867BF06B6F /* Pods-SubscriptionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionsTests.debug.xcconfig"; path = "Target Support Files/Pods-SubscriptionsTests/Pods-SubscriptionsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F50EB94563B07F47EFDD2B31 /* Pods_SubscriptionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubscriptionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCADF27B99924BC6C20A24B1 /* Pods-SubscriptionsTests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionsTests.qa.xcconfig"; path = "Target Support Files/Pods-SubscriptionsTests/Pods-SubscriptionsTests.qa.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C21BF1CFCDD309546AC823B5 /* Pods_Subscriptions.framework in Frameworks */,
+				3B14312B3A235D2EF2FA0BCA /* Pods_Subscriptions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15027F024FCE32310E03C5F7 /* Pods_SubscriptionsTests.framework in Frameworks */,
+				5545B0533B2CF51B93BC2A0F /* Pods_SubscriptionsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,25 +102,27 @@
 		4D19F19BF3A04A836748E832 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2793BE24F960CCE79195B629 /* Pods-Subscriptions.debug.xcconfig */,
-				0B9172D40196A76DC3E76A76 /* Pods-Subscriptions.release.xcconfig */,
-				DF14E1491492BABDEBE4E4F7 /* Pods-SubscriptionsTests.debug.xcconfig */,
-				2A55F1365DFB3546CE68E346 /* Pods-SubscriptionsTests.release.xcconfig */,
+				B07743BC9C5C7E240523DB8A /* Pods-Subscriptions.debug.xcconfig */,
+				830660C4875018D73B71A09B /* Pods-Subscriptions.production.xcconfig */,
+				843DB31BA7E68D1926622D4C /* Pods-Subscriptions.qa.xcconfig */,
+				CA3189B0AC100F867BF06B6F /* Pods-SubscriptionsTests.debug.xcconfig */,
+				449F19F1BD91090480D26A75 /* Pods-SubscriptionsTests.production.xcconfig */,
+				FCADF27B99924BC6C20A24B1 /* Pods-SubscriptionsTests.qa.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		B23B143B2508482B008B30A5 = {
 			isa = PBXGroup;
 			children = (
+				B25E46AD267E5A62008BD170 /* Utils */,
 				B2B769F3250C514E00FA4331 /* Logging */,
 				B23B1469250BC501008B30A5 /* Extension */,
 				B23B14462508482B008B30A5 /* Subscriptions */,
 				B23B145D25084831008B30A5 /* SubscriptionsTests */,
 				B23B14452508482B008B30A5 /* Products */,
 				4D19F19BF3A04A836748E832 /* Pods */,
-				BB2B98DB43460F864FF1A9BD /* Frameworks */,
+				C64A90E8FADBD163AF6370FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +145,10 @@
 				B23B145025084831008B30A5 /* Assets.xcassets */,
 				B23B145225084831008B30A5 /* LaunchScreen.storyboard */,
 				B23B145525084831008B30A5 /* Info.plist */,
+				B21F0EB9268288B70015FC1B /* config.plist */,
+				B21F0EFF268385F90015FC1B /* Subscriptions-Production.xcconfig */,
+				B21F0F00268386110015FC1B /* Subscriptions-Debug.xcconfig */,
+				B21F0F012683861D0015FC1B /* Subscriptions-QA.xcconfig */,
 			);
 			path = Subscriptions;
 			sourceTree = "<group>";
@@ -155,6 +170,14 @@
 				B23B146E250BEA72008B30A5 /* UIFont+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		B25E46AD267E5A62008BD170 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B25E46AE267E5A6F008BD170 /* EnvironmentConfiguration.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B2B769F3250C514E00FA4331 /* Logging */ = {
@@ -197,11 +220,11 @@
 			path = FileWriter;
 			sourceTree = "<group>";
 		};
-		BB2B98DB43460F864FF1A9BD /* Frameworks */ = {
+		C64A90E8FADBD163AF6370FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				846169725025C84B85C07FCA /* Pods_Subscriptions.framework */,
-				8F22711DF960C4980E858D5B /* Pods_SubscriptionsTests.framework */,
+				5176994F1045EF1403DE20E3 /* Pods_Subscriptions.framework */,
+				F50EB94563B07F47EFDD2B31 /* Pods_SubscriptionsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,7 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B23B146325084831008B30A5 /* Build configuration list for PBXNativeTarget "Subscriptions" */;
 			buildPhases = (
-				DD67DCF16AA1F00E894C9DF9 /* [CP] Check Pods Manifest.lock */,
+				BB5351E4D5156F6B75A9D15F /* [CP] Check Pods Manifest.lock */,
 				B23B14402508482B008B30A5 /* Sources */,
 				B23B14412508482B008B30A5 /* Frameworks */,
 				B23B14422508482B008B30A5 /* Resources */,
@@ -231,7 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B23B146625084831008B30A5 /* Build configuration list for PBXNativeTarget "SubscriptionsTests" */;
 			buildPhases = (
-				2F0801D1697AF7585B4DC90E /* [CP] Check Pods Manifest.lock */,
+				6B0CB9CC4254A97A4DD3313E /* [CP] Check Pods Manifest.lock */,
 				B23B145625084831008B30A5 /* Sources */,
 				B23B145725084831008B30A5 /* Frameworks */,
 				B23B145825084831008B30A5 /* Resources */,
@@ -253,7 +276,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Parth Patel";
 				TargetAttributes = {
 					B23B14432508482B008B30A5 = {
@@ -289,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21F0EBA268288B70015FC1B /* config.plist in Resources */,
 				B23B145425084831008B30A5 /* LaunchScreen.storyboard in Resources */,
 				B23B145125084831008B30A5 /* Assets.xcassets in Resources */,
 				B23B144F2508482B008B30A5 /* Main.storyboard in Resources */,
@@ -305,7 +329,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F0801D1697AF7585B4DC90E /* [CP] Check Pods Manifest.lock */ = {
+		6B0CB9CC4254A97A4DD3313E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,7 +351,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD67DCF16AA1F00E894C9DF9 /* [CP] Check Pods Manifest.lock */ = {
+		BB5351E4D5156F6B75A9D15F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,6 +391,7 @@
 				B2B76A02250C514E00FA4331 /* LogProvider.swift in Sources */,
 				B2B76A01250C514E00FA4331 /* ConsoleLogProvider.swift in Sources */,
 				B2B76A00250C514E00FA4331 /* FileLogProvider.swift in Sources */,
+				B25E46AF267E5A6F008BD170 /* EnvironmentConfiguration.swift in Sources */,
 				B23B144A2508482B008B30A5 /* SceneDelegate.swift in Sources */,
 				B2B76A06250C514E00FA4331 /* LogService.swift in Sources */,
 				B23B146B250BC522008B30A5 /* UIColor+Extension.swift in Sources */,
@@ -411,8 +436,199 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B21F0EF9268374B80015FC1B /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21F0F012683861D0015FC1B /* Subscriptions-QA.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = QA;
+		};
+		B21F0EFA268374B80015FC1B /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 843DB31BA7E68D1926622D4C /* Pods-Subscriptions.qa.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Subscriptions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parth.test.Subscriptions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = QA;
+		};
+		B21F0EFB268374B80015FC1B /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCADF27B99924BC6C20A24B1 /* Pods-SubscriptionsTests.qa.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SubscriptionsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parth.test.SubscriptionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subscriptions.app/Subscriptions";
+			};
+			name = QA;
+		};
+		B21F0EFC268374C50015FC1B /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21F0EFF268385F90015FC1B /* Subscriptions-Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Production;
+		};
+		B21F0EFD268374C50015FC1B /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 830660C4875018D73B71A09B /* Pods-Subscriptions.production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Subscriptions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parth.test.Subscriptions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Production;
+		};
+		B21F0EFE268374C50015FC1B /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 449F19F1BD91090480D26A75 /* Pods-SubscriptionsTests.production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SubscriptionsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parth.test.SubscriptionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subscriptions.app/Subscriptions";
+			};
+			name = Production;
+		};
 		B23B146125084831008B30A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21F0F00268386110015FC1B /* Subscriptions-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -471,63 +687,9 @@
 			};
 			name = Debug;
 		};
-		B23B146225084831008B30A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		B23B146425084831008B30A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2793BE24F960CCE79195B629 /* Pods-Subscriptions.debug.xcconfig */;
+			baseConfigurationReference = B07743BC9C5C7E240523DB8A /* Pods-Subscriptions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,28 +704,10 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		B23B146525084831008B30A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B9172D40196A76DC3E76A76 /* Pods-Subscriptions.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Subscriptions/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.parth.test.Subscriptions;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
 		};
 		B23B146725084831008B30A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF14E1491492BABDEBE4E4F7 /* Pods-SubscriptionsTests.debug.xcconfig */;
+			baseConfigurationReference = CA3189B0AC100F867BF06B6F /* Pods-SubscriptionsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,28 +726,6 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subscriptions.app/Subscriptions";
 			};
 			name = Debug;
-		};
-		B23B146825084831008B30A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A55F1365DFB3546CE68E346 /* Pods-SubscriptionsTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SubscriptionsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.parth.test.SubscriptionsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subscriptions.app/Subscriptions";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -612,28 +734,31 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B23B146125084831008B30A5 /* Debug */,
-				B23B146225084831008B30A5 /* Release */,
+				B21F0EFC268374C50015FC1B /* Production */,
+				B21F0EF9268374B80015FC1B /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		B23B146325084831008B30A5 /* Build configuration list for PBXNativeTarget "Subscriptions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B23B146425084831008B30A5 /* Debug */,
-				B23B146525084831008B30A5 /* Release */,
+				B21F0EFD268374C50015FC1B /* Production */,
+				B21F0EFA268374B80015FC1B /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		B23B146625084831008B30A5 /* Build configuration list for PBXNativeTarget "SubscriptionsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B23B146725084831008B30A5 /* Debug */,
-				B23B146825084831008B30A5 /* Release */,
+				B21F0EFE268374C50015FC1B /* Production */,
+				B21F0EFB268374B80015FC1B /* QA */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
