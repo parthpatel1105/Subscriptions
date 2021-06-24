@@ -11,10 +11,21 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-    //test
+    var window: UIWindow?
+    private var router: AppRouter!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+  
+//        let onBoardingView = ViewController.instantiateStoryboard(.Main)
+//        UIApplication.shared.windows.first?.rootViewController = UINavigationController(rootViewController: onBoardingView)
+//        UIApplication.shared.windows.first?.makeKeyAndVisible()
+
+        
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        if let window = window {
+//            router = AppRouter(window: window, navigationController: UINavigationController())
+//            router.start()
+//        }
         return true
     }
 
@@ -35,3 +46,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    func setupLogging() {
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        let logDateFormatter = LogDateFormatter(dateFormat: "yyyy-MM-dd HH:mm:ssSSS")
+        LogService.register(provider: ConsoleLogProvider(dateFormatter: logDateFormatter))
+        LogService.register(provider: FileLogProvider(dateFormatter: logDateFormatter, fileWriter: LogFileWriter(filePath: documentsPath + "/TodoAppLog.txt")))
+    }
+}
