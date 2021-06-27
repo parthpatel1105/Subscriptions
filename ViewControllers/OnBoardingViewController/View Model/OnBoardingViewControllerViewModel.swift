@@ -7,12 +7,47 @@
 //
 
 import Foundation
+import UIKit
+
+enum OnboardingPage: Int, CaseIterable {
+    case welcome = 0
+    case newFeature
+    case permissions
+    case sales
+    
+    
+    
+    var shouldShowNextButton: Bool {
+        switch self {
+        case .welcome, .newFeature, .permissions:
+            return true
+        default:
+            return false
+        }
+    }
+    
+    var pageTitle: String {
+        switch self {
+        case .welcome:
+            return "Hey there! Welcome to our App"
+        case .newFeature:
+            return "Please bear with us for onborading"
+        case .permissions:
+            return "Please allow Push notification permission"
+        case .sales:
+            return "Let's make a sale"
+        }
+    }
+
+}
 
 class OnBoardingViewControllerViewModel {
 
     /// Count your data in model
     var count: Int = 0
-
+    let fullOnboarding = OnboardingPage.allCases
+    var currentPageIndex = 0
+    
     //MARK: -- Network checking
 
 
@@ -52,6 +87,62 @@ class OnBoardingViewControllerViewModel {
 
     init() {
     }
+    
+    // MARK: - Create a View Controller
+    
+    func getViewController(forViewController controller: UIViewController, isNextController: Bool) -> UIViewController? {
+        guard let controller = controller as? IntroductionViewController else { return nil }
+        var index: Int = 0
+        for (location, scene) in fullOnboarding.enumerated() {
+            if scene.pageTitle == controller.name {
+                index = location
+            }
+        }
+        isNextController ? (index += 1) : (index -= 1)
+        if isNextController {
+            if fullOnboarding.count > index {
+                return createSlideViewController(fromIndex: index)
+            }else{
+                return nil
+            }
+        }else{
+            if index >= 0 {
+                return createSlideViewController(fromIndex: index)
+            }else{
+                return nil
+            }
+        }
+    }
+
+    
+    func createSlideViewController(fromIndex index: Int) -> UIViewController {
+        let screen = fullOnboarding[currentPageIndex]
+        let introductionView = IntroductionViewController.instantiateStoryboard(.OnBoarding)
+        introductionView.name = screen.pageTitle
+        introductionView.view.tag = screen.rawValue
+        return introductionView
+    }
+
+    
+    func createSlideViewController1(fromIndex index: Int) -> UIViewController {
+        //let currentPage = OnboardingPage(rawValue: index)
+        
+        let screen = fullOnboarding[index]
+        let introductionView = IntroductionViewController.instantiateStoryboard(.OnBoarding)
+        introductionView.view.tag = screen.rawValue
+        introductionView.name = screen.pageTitle
+        return introductionView
+        
+//        switch currentPage {
+//        case .welcome:
+//        case .newFeature:
+//        case .permissions:
+//        case .sales:
+//        }
+        
+        
+    }
+
 
 
     //MARK: -- Example Func

@@ -15,25 +15,18 @@ protocol Coordinator {
 
 final class AppRouter: Coordinator {
     
-    private let window: UIWindow
     private let navigationController: UINavigationController
     
     // MARK: - Initialize Router
-    internal init(window: UIWindow, navigationController: UINavigationController) {
-        self.window = window
-        self.navigationController = navigationController
+    internal init() {
+        self.navigationController = UINavigationController()
     }
 
     // MARK: - Start Routing
     
     func start() {
-        //let onBoardingView = OnBoardingViewControllerView.instantiateStoryboard(.OnBoarding)
-        let onBoardingView = ViewController.instantiateStoryboard(.Main)
-//        navigationController.viewControllers = [onBoardingView]
-//        window.rootViewController = navigationController
-//        window.makeKeyAndVisible()
+        let onBoardingView = OnBoardingViewController.instantiateStoryboard(.OnBoarding)
         UIApplication.shared.windows.first?.rootViewController = UINavigationController(rootViewController: onBoardingView)
         UIApplication.shared.windows.first?.makeKeyAndVisible()
-
     }
 }

@@ -1,43 +1,32 @@
 //  
-//  OnBoardingViewControllerView.swift
+//  IntroductionViewController.swift
 //  Subscriptions
 //
-//  Created by Parth Patel on 24/06/21.
+//  Created by Parth Patel on 25/06/21.
 //  Copyright © 2021 Parth Patel. All rights reserved.
 //
 
 import UIKit
 
-class OnBoardingViewControllerView: UIPageViewController {
+class IntroductionViewController: UIViewController {
 
     // OUTLETS HERE
-
+    @IBOutlet weak var pageTitleLabel: UILabel!
+    
     // VARIABLES HERE
-    var viewModel = OnBoardingViewControllerViewModel()
+    var viewModel = IntroductionViewControllerViewModel()
+    var name: String?
+    var titleText: String?
 
-    
-    // MARK: - View Life cycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupViewModel()
-        self.configureUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        pageTitleLabel.text = name
     }
-    
-    // MARK: - Configure UI
-    
-    private func configureUI() {
-        view.backgroundColor = .red//Theme.primaryTextColor
-    }
-}
-
-extension OnBoardingViewControllerView {
-    
-    // MARK: - Setup View Model
     
     fileprivate func setupViewModel() {
 
@@ -69,6 +58,7 @@ extension OnBoardingViewControllerView {
         }
 
     }
+    
 }
 
 

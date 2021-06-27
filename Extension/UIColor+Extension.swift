@@ -58,4 +58,10 @@ struct Theme {
     
     @DynamicColor(light: .black, dark: .white)
     static var labelTextColor: UIColor
+    
+    @DynamicColor(light: .lightGray, dark: .white)
+    static var pageTintColor: UIColor
+    
+    @DynamicColor(light: .blue, dark: .white)
+    static var currentPageTintColor: UIColor
 }
