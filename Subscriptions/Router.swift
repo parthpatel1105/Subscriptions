@@ -25,8 +25,14 @@ final class AppRouter: Coordinator {
     // MARK: - Start Routing
     
     func start() {
-        let onBoardingView = OnBoardingViewController.instantiateStoryboard(.OnBoarding)
-        UIApplication.shared.windows.first?.rootViewController = UINavigationController(rootViewController: onBoardingView)
+        let homeScreenView = HomeViewControllerView.instantiateStoryboard(.HomePage)
+        UIApplication.shared.windows.first?.rootViewController = UINavigationController(rootViewController: homeScreenView)
         UIApplication.shared.windows.first?.makeKeyAndVisible()
+
+        
+        
+//        let onBoardingView = OnBoardingViewController.instantiateStoryboard(.OnBoarding)
+//        UIApplication.shared.windows.first?.rootViewController = UINavigationController(rootViewController: onBoardingView)
+//        UIApplication.shared.windows.first?.makeKeyAndVisible()
     }
 }

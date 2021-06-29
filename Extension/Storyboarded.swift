@@ -12,8 +12,7 @@ import UIKit
 enum Storyboard: String {
     case Main
     case OnBoarding
-    case LoginView
-    case VideoPlayList
+    case HomePage
 }
 
 protocol Storyboarded {

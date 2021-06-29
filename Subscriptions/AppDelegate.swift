@@ -23,6 +23,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
+    func manageNavigationBar() {
+        // Handle Navigation
+        let attribute = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        UINavigationBar.appearance().titleTextAttributes = attribute
+        //UINavigationBar.appearance().barTintColor = ThemeManager.viewBackgroundColor
+        UINavigationBar.appearance().tintColor = .black
+//        var image: UIImage
+//        if #available(iOS 13.0, *) {
+//            image = UIImage(systemName: "arrow.left")!
+//        } else {
+//            // Fallback on earlier versions
+//            image = UIImage(named: "arrow_backward")!
+//        }
+//        UINavigationBar.appearance().backIndicatorImage = image
+//        UINavigationBar.appearance().backIndicatorTransitionMaskImage = image
+        // Handle Navigation
+    }
+}
+
+extension AppDelegate {
     func setupLogging() {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         let logDateFormatter = LogDateFormatter(dateFormat: "yyyy-MM-dd HH:mm:ssSSS")

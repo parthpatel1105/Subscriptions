@@ -12,6 +12,9 @@ class HomeViewControllerView: UIViewController {
 
     // OUTLETS HERE
 
+    @IBOutlet weak var moreButton: UIBarButtonItem!
+    @IBOutlet weak var editButton: UIBarButtonItem!
+    
     // VARIABLES HERE
     var viewModel = HomeViewControllerViewModel()
 
@@ -21,10 +24,19 @@ class HomeViewControllerView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupViewModel()
+        self.configureUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    // MARK: - Configure UI
+    
+    private func configureUI() {
+        self.title = "Subscription"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
     }
 }
 
