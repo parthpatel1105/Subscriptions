@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,7 @@
 		B21F0F3326851BDE0015FC1B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F0F3226851BDE0015FC1B /* Router.swift */; };
 		B21F0F3F26851BF00015FC1B /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F0F3726851BF00015FC1B /* OnBoardingViewController.swift */; };
 		B21F0F4026851BF00015FC1B /* OnBoardingViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F0F3926851BF00015FC1B /* OnBoardingViewControllerViewModel.swift */; };
-		B21F0F4126851BF00015FC1B /* HomeViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F0F3C26851BF00015FC1B /* HomeViewControllerView.swift */; };
+		B21F0F4126851BF00015FC1B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F0F3C26851BF00015FC1B /* HomeViewController.swift */; };
 		B21F0F4226851BF00015FC1B /* HomeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F0F3E26851BF00015FC1B /* HomeViewControllerViewModel.swift */; };
 		B23B14482508482B008B30A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B14472508482B008B30A5 /* AppDelegate.swift */; };
 		B23B144C2508482B008B30A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B144B2508482B008B30A5 /* ViewController.swift */; };
@@ -30,6 +30,9 @@
 		B23B146F250BEA72008B30A5 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B146E250BEA72008B30A5 /* UIFont+Extension.swift */; };
 		B241378B268A7980009AAA29 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B241378A268A7980009AAA29 /* HomePage.storyboard */; };
 		B25E46AF267E5A6F008BD170 /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E46AE267E5A6F008BD170 /* EnvironmentConfiguration.swift */; };
+		B2B495FF268B5E9C008A6DDE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2B49601268B5E9C008A6DDE /* Localizable.strings */; };
+		B2B49604268B60A1008A6DDE /* LanguageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B49603268B60A1008A6DDE /* LanguageConfiguration.swift */; };
+		B2B49606268B62B2008A6DDE /* CopyDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B49605268B62B2008A6DDE /* CopyDeck.swift */; };
 		B2B6A665268531AD00F5A564 /* OnBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6A664268531AD00F5A564 /* OnBoard.swift */; };
 		B2B6A66D268610EF00F5A564 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6A66A268610EF00F5A564 /* IntroductionViewController.swift */; };
 		B2B6A66E268610EF00F5A564 /* IntroductionViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6A66C268610EF00F5A564 /* IntroductionViewControllerViewModel.swift */; };
@@ -71,7 +74,7 @@
 		B21F0F3226851BDE0015FC1B /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B21F0F3726851BF00015FC1B /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		B21F0F3926851BF00015FC1B /* OnBoardingViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewControllerViewModel.swift; sourceTree = "<group>"; };
-		B21F0F3C26851BF00015FC1B /* HomeViewControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerView.swift; sourceTree = "<group>"; };
+		B21F0F3C26851BF00015FC1B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B21F0F3E26851BF00015FC1B /* HomeViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewControllerViewModel.swift; sourceTree = "<group>"; };
 		B23B14442508482B008B30A5 /* Subscriptions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subscriptions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23B14472508482B008B30A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +90,10 @@
 		B23B146E250BEA72008B30A5 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		B241378A268A7980009AAA29 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		B25E46AE267E5A6F008BD170 /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
+		B2B49600268B5E9C008A6DDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B2B49602268B5ED4008A6DDE /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B2B49603268B60A1008A6DDE /* LanguageConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageConfiguration.swift; sourceTree = "<group>"; };
+		B2B49605268B62B2008A6DDE /* CopyDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyDeck.swift; sourceTree = "<group>"; };
 		B2B6A664268531AD00F5A564 /* OnBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoard.swift; sourceTree = "<group>"; };
 		B2B6A66A268610EF00F5A564 /* IntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		B2B6A66C268610EF00F5A564 /* IntroductionViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewControllerViewModel.swift; sourceTree = "<group>"; };
@@ -193,7 +200,7 @@
 		B21F0F3B26851BF00015FC1B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B21F0F3C26851BF00015FC1B /* HomeViewControllerView.swift */,
+				B21F0F3C26851BF00015FC1B /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +249,7 @@
 				B23B145225084831008B30A5 /* LaunchScreen.storyboard */,
 				B23B145525084831008B30A5 /* Info.plist */,
 				B21F0EB9268288B70015FC1B /* config.plist */,
+				B2B49601268B5E9C008A6DDE /* Localizable.strings */,
 				B21F0EFF268385F90015FC1B /* Subscriptions-Production.xcconfig */,
 				B21F0F00268386110015FC1B /* Subscriptions-Debug.xcconfig */,
 				B21F0F012683861D0015FC1B /* Subscriptions-QA.xcconfig */,
@@ -275,6 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				B25E46AE267E5A6F008BD170 /* EnvironmentConfiguration.swift */,
+				B2B49603268B60A1008A6DDE /* LanguageConfiguration.swift */,
+				B2B49605268B62B2008A6DDE /* CopyDeck.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -372,6 +382,7 @@
 				B23B14402508482B008B30A5 /* Sources */,
 				B23B14412508482B008B30A5 /* Frameworks */,
 				B23B14422508482B008B30A5 /* Resources */,
+				990B908E39F42D3FAB396220 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,6 +438,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"fr-CA",
 			);
 			mainGroup = B23B143B2508482B008B30A5;
 			productRefGroup = B23B14452508482B008B30A5 /* Products */;
@@ -447,6 +459,7 @@
 				B21F0EBA268288B70015FC1B /* config.plist in Resources */,
 				B23B145425084831008B30A5 /* LaunchScreen.storyboard in Resources */,
 				B241378B268A7980009AAA29 /* HomePage.storyboard in Resources */,
+				B2B495FF268B5E9C008A6DDE /* Localizable.strings in Resources */,
 				B23B145125084831008B30A5 /* Assets.xcassets in Resources */,
 				B21F0F3126851BB10015FC1B /* Main.storyboard in Resources */,
 				B21F0F3026851BB10015FC1B /* OnBoarding.storyboard in Resources */,
@@ -483,6 +496,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		990B908E39F42D3FAB396220 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Subscriptions/Pods-Subscriptions-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Subscriptions/Pods-Subscriptions-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Subscriptions/Pods-Subscriptions-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB5351E4D5156F6B75A9D15F /* [CP] Check Pods Manifest.lock */ = {
@@ -527,9 +557,11 @@
 				B2B769FF250C514E00FA4331 /* LogDateFormatter.swift in Sources */,
 				B2B6A66D268610EF00F5A564 /* IntroductionViewController.swift in Sources */,
 				B21F0F2A26851BA30015FC1B /* Storyboarded.swift in Sources */,
+				B2B49606268B62B2008A6DDE /* CopyDeck.swift in Sources */,
 				B2B6A66E268610EF00F5A564 /* IntroductionViewControllerViewModel.swift in Sources */,
 				B2B76A02250C514E00FA4331 /* LogProvider.swift in Sources */,
-				B21F0F4126851BF00015FC1B /* HomeViewControllerView.swift in Sources */,
+				B21F0F4126851BF00015FC1B /* HomeViewController.swift in Sources */,
+				B2B49604268B60A1008A6DDE /* LanguageConfiguration.swift in Sources */,
 				B2B76A01250C514E00FA4331 /* ConsoleLogProvider.swift in Sources */,
 				B2B76A00250C514E00FA4331 /* FileLogProvider.swift in Sources */,
 				B21F0F4026851BF00015FC1B /* OnBoardingViewControllerViewModel.swift in Sources */,
@@ -577,6 +609,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		B2B49601268B5E9C008A6DDE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2B49600268B5E9C008A6DDE /* en */,
+				B2B49602268B5ED4008A6DDE /* fr-CA */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -585,6 +626,7 @@
 			baseConfigurationReference = B21F0F012683861D0015FC1B /* Subscriptions-QA.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -642,6 +684,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Subscriptions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,6 +723,7 @@
 			baseConfigurationReference = B21F0EFF268385F90015FC1B /* Subscriptions-Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -737,6 +781,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Subscriptions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -775,6 +820,7 @@
 			baseConfigurationReference = B21F0F00268386110015FC1B /* Subscriptions-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -838,6 +884,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Subscriptions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

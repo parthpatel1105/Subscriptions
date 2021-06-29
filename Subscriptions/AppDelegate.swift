@@ -13,9 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     private var router: AppRouter!
+    private var languageConfigure: LanguageConfiguration?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {        
         AppRouter().start()
+        languageConfigure = LanguageConfiguration()
+        manageNavigationBar()
         return true
     }
     
@@ -28,7 +31,7 @@ extension AppDelegate {
         let attribute = [NSAttributedString.Key.foregroundColor: UIColor.black]
         UINavigationBar.appearance().titleTextAttributes = attribute
         //UINavigationBar.appearance().barTintColor = ThemeManager.viewBackgroundColor
-        UINavigationBar.appearance().tintColor = .black
+        UINavigationBar.appearance().tintColor = Theme.appTintColor
 //        var image: UIImage
 //        if #available(iOS 13.0, *) {
 //            image = UIImage(systemName: "arrow.left")!

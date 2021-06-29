@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class HomeViewControllerViewModel {
 
@@ -87,3 +88,32 @@ class HomeViewControllerViewModel {
 extension HomeViewControllerViewModel {
 
 }
+
+// MARK: - Configure CollectionView
+
+enum Section {
+    case main
+}
+
+struct HeaderItem: Hashable {
+    let title: String
+    let image: UIImage
+    let symbols: [SFSymbolItem]
+}
+
+struct SFSymbolItem: Hashable {
+    
+    let name: String
+    let image: UIImage
+    
+    internal init(name: String) {
+        self.name = name
+        self.image = UIImage(systemName: name)!
+    }
+}
+
+enum ListItem: Hashable {
+    case header(HeaderItem)
+    case symbol(SFSymbolItem)
+}
+

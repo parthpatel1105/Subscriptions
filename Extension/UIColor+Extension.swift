@@ -64,4 +64,8 @@ struct Theme {
     
     @DynamicColor(light: .blue, dark: .white)
     static var currentPageTintColor: UIColor
+    
+    @DynamicColor(light: UIColor(red: 109.0/255.0, green: 85.0/255.0, blue: 152.0/255.0, alpha: 1.0), dark: UIColor(red: 109.0/255.0, green: 85.0/255.0, blue: 155.0/255.0, alpha: 1.0))
+    static var appTintColor: UIColor
+
 }

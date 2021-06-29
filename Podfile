@@ -4,7 +4,9 @@
 target 'Subscriptions' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
+  pod 'LanguageManager-iOS'
+  
   # Pods for Subscriptions
 
   target 'SubscriptionsTests' do
